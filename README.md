@@ -28,7 +28,19 @@ tar -xvf kubectl-crane.tar.gz
 cp kubectl-crane_${release}_Darwin_${arch}/kubectl-crane /usr/local/bin/
 ```
 
-## Usage 
+### Install using Krew
+
+`Krew` is the plugin manager for `kubectl` command-line tool.
+
+[Install and set up](https://krew.sigs.k8s.io/docs/user-guide/setup/install/) Krew on your machine.
+
+Then install `kubectl-crane` plug-in:
+
+```shell
+kubectl krew install crane
+```
+
+## Usage
 
 ```
 $ kubectl crane -h
